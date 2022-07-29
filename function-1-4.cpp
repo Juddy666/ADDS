@@ -1,5 +1,5 @@
 // function to ...
-int sum_two_arrays(int array[], int secondarray[], int n);
+int sum_two_arrays(int array[], int secondarray[], int n)
 {
 	    if(n <1){
     return 0;
