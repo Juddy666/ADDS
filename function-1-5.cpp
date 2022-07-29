@@ -1,6 +1,5 @@
 // function to count the number of even numbers betwwen 1 and a given number
-int count_even(int number)
-{
+int count_evens(int number){
 	if(number <1){
     return 0;
 }

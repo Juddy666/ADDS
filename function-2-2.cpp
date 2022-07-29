@@ -1,5 +1,5 @@
 // function to find biggest number in an array.
-int maximum(int array[], int n)
+int max_element(int array[], int n)
 {
     if(n <1){
     return 0;

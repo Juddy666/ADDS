@@ -1,5 +1,5 @@
 // function to find smallest number in an array.
-int minimum(int array[], int n)
+int min_element(int array[], int n)
 {
     if(n <1){
     return 0;
