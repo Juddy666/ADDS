@@ -1,5 +1,5 @@
 
-
+//function to add up all elements in an array
 int array_sum(int* array, int n)
 {
 if(n <1){

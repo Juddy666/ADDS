@@ -1,5 +1,5 @@
-// function to ...
-double average(int array[], int n)
+// function to find mean of an array
+double array_mean(int array[], int n)
 {
 	double average = 0;
     if(n <1){
