@@ -2,6 +2,7 @@
 
  BusCounter::BusCounter(int Cap){
     capacity =Cap;
+    bus_count =0;
 }
 
 void BusCounter::passenger_board(){
