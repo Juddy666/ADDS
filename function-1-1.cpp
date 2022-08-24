@@ -7,8 +7,8 @@ int *left_shift(int *vals, int len, int amount){
         *(vals+i) = *(vals+i+amount);
     }
 
-    for(int i =len; i >=amount;i--){
-        *(vals+i-1) = 0;
+    for(int i =len-amount; i<len;i++){
+        *(vals+i) =0;
     }
 
     return vals;
