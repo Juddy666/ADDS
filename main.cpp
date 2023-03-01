@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
-#include <Computer.h>
-#include <Player.h>
-#include <Human.h>
-#include <Referee.h>
+#include "Computer.h"
+#include "Player.h"
+#include "Human.h"
+#include "Referee.h"
 
 using namespace std;
 

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <Referee.h>
+#include "Referee.h"
 using namespace std;
 
 Player* Referee::refGame(Player* player1, Player* player2){

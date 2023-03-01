@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <Player.h>
+#include "Player.h"
 #ifndef HUMAN_H
 #define HUMAN_H
 using namespace std;
