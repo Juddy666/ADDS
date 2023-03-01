@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <Computer.h>
+#include "Computer.h"
 using namespace std;
 
 char Computer::makeMove(){
