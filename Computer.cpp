@@ -3,7 +3,15 @@
 #include "Computer.h"
 using namespace std;
 
+Computer::Computer(){
+    name = "Computer";
+}
+
+
+
 char Computer::makeMove(){
-    char Computermove r;
-    return Computermove;
+    
+    char computerMove = 'R';
+    
+    return computerMove;
 }

@@ -8,9 +8,8 @@ class Player{
     protected: 
         string name;
     public:
-        
         Player();
-        Player(string name);
+        Player(string new_name);
         virtual char makeMove( ) = 0;
         string getName( );
         

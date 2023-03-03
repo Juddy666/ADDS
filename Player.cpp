@@ -12,7 +12,7 @@ Player::Player(string new_name){
     name = new_name;
 }
 
-virtual char Player::makeMove() = 0;
+// virtual char Player::makeMove() = 0;
 
 string Player::getName(){
     return name;

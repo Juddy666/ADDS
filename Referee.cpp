@@ -4,13 +4,13 @@
 using namespace std;
 
 Player* Referee::refGame(Player* player1, Player* player2){
-    
+    Player* Null = nullptr;
     char playerMove = player1->makeMove();
     char computerMove = player2->makeMove();
         if(playerMove == computerMove){
-            return Player* NULL;
+            return Null;
         }
-        else if(playerMove == 'R' && computerMove == 'S' || playerMove == 'S' && computerMove == 'P'|| playerMove == 'P' && computerMove == 'R'){
+        else if((playerMove == 'R' && computerMove == 'S') || (playerMove == 'S' && computerMove == 'P')|| (playerMove == 'P' && computerMove == 'R')){
             return player1;
         }
         else{

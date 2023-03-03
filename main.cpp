@@ -8,16 +8,16 @@
 using namespace std;
 
 
-int main(){
+int main(int arg, char **argv){
     string humanName;
     cout << "Enter name: " << endl;
-    cin >> humanName << endl;
-    Player *Jeff =  new Player(humanName);
-    Computer *Comp = new Computer("Compo");
-    Referee Ref = Referee("Refo");
+    cin >> humanName;
+    Human *Jeff =  new Human(humanName);
+    Computer *Comp = new Computer();
+    Referee Ref = Referee();
     Player *Winner = Ref.refGame(Jeff,Comp);
 
     cout << "Winner: " << Winner->getName() << endl;
-    
+return 0;
     
 }

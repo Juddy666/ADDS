@@ -7,7 +7,8 @@ using namespace std;
 
 class Computer : public Player{
     public:
-        char makeMove()
+        Computer();
+        char makeMove();
 };
 
 #endif //COMPUTER_H
