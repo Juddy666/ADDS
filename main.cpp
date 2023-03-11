@@ -18,10 +18,10 @@ int main(int arg, char **argv){
     Computer *Comp = new Computer();
     Referee Ref = Referee();
     
-    // Move* player2Move = Comp->makeMove();
-    // cout << player2Move->getName() <<endl;
-    // Move* player1Move = Jeff->makeMove();
-    // cout << player1Move->getName() << endl;
+    Move* player2Move = Comp->makeMove();
+    cout << player2Move->getName() <<endl;
+    Move* player1Move = Jeff->makeMove();
+    cout << player1Move->getName() << endl;
     
     
     Player *Winner = Ref.refGame(Jeff,Comp);
