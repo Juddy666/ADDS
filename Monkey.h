@@ -5,7 +5,7 @@
 class Monkey : public Move{
     public: 
         Monkey();
-        bool compareMove(Move* opponentMove);
+        int compareMove(Move* opponentMove);
 
 };
 #endif //MONKEY_H

@@ -4,7 +4,7 @@
 class Ninja : public Move{
     public:
         Ninja();
-        bool compareMove(Move* opponentMove);
+        int compareMove(Move* opponentMove);
 };
 
 

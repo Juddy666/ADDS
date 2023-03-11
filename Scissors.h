@@ -5,7 +5,7 @@
 class Scissors : public Move{
     public:
     Scissors();
-    bool compareMove(Move* opponentMove);
+    int compareMove(Move* opponentMove);
 };
 
 #endif //SCISSORS_H

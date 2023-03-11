@@ -5,7 +5,7 @@
 class Paper : public Move{
     public:
         Paper();
-        bool compareMove(Move* opponentMove);
+        int compareMove(Move* opponentMove);
 };
 
 #endif //PAPER_H

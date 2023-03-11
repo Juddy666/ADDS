@@ -3,12 +3,15 @@
 Ninja::Ninja(){
     moveName = "Ninja";
 }
-    bool Ninja::compareMove(Move* opponentMove){
+    int Ninja::compareMove(Move* opponentMove){
          if(opponentMove->getName() == "Pirate"||opponentMove->getName() == "Zombie"){
         return 1;
-    }
-    else{ 
-        return 0;
-    }
+        }
+        else if(opponentMove->getName()== "Ninja"){
+            return 2;
+        }
+        else{ 
+            return 0;
+        }
 }
     

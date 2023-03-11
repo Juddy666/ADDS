@@ -5,7 +5,7 @@
 class Rock : public Move{
     public:
     Rock();
-    bool compareMove(Move* opponentMove);
+    int compareMove(Move* opponentMove);
 
 };
 

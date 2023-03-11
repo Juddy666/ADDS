@@ -9,9 +9,12 @@ Pirate::Pirate(){
     moveName = "Pirate";
 }
 
-bool Pirate::compareMove(Move* opponentMove){
+int Pirate::compareMove(Move* opponentMove){
     if(opponentMove->getName() == "Robot"||opponentMove->getName() == "Monkey"){
         return 1;
+    }
+    else if(opponentMove->getName() == "Pirate"){
+        return 2;
     }
     else{ 
         return 0;

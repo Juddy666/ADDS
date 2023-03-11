@@ -1,10 +1,13 @@
 #include "Robot.h"
 Robot::Robot(){
-    moveName="robot";
+    moveName="Robot";
 }
-bool Robot::compareMove(Move* opponentMove){
+int Robot::compareMove(Move* opponentMove){
     if(opponentMove->getName() == "Ninja"||opponentMove->getName() == "Zombie"){
         return 1;
+    }
+    else if(opponentMove->getName() == "Robot"){
+        return 2;
     }
     else{ 
         return 0;

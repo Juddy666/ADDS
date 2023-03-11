@@ -8,7 +8,7 @@ using namespace std;
 class Pirate : public Move{
     public:
         Pirate();
-  bool compareMove(Move* opponentMove);
+  int compareMove(Move* opponentMove);
 };
 
 

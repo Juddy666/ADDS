@@ -9,9 +9,12 @@ Zombie::Zombie(){
     moveName = "Zombie";
 }
 
-bool Zombie::compareMove(Move* opponentMove){
+int Zombie::compareMove(Move* opponentMove){
     if(opponentMove->getName() == "Pirate"||opponentMove->getName()=="Monkey"){
         return 1;
+    }
+    if(opponentMove->getName() == "Zombie"){
+        return 2;
     }
     else{
         return 0;

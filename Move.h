@@ -12,7 +12,7 @@ class Move{
     public: 
         Move();
         //Move(string _moveName);
-        virtual bool compareMove(Move* opponentMove)=0;
+        virtual int compareMove(Move* opponentMove)=0;
         string getName();
         // void setMoveName(string newMoveName);
 

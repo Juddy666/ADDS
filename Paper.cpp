@@ -5,9 +5,12 @@ Paper::Paper(){
     moveName = "Paper";
 }
 
-bool Paper::compareMove(Move* opponentMove){
+int Paper::compareMove(Move* opponentMove){
     if(opponentMove->getName() == "Rock"){
         return 1;
+    }
+    else if(opponentMove->getName() == "Paper"){
+        return 2;
     }
     else{
         return 0;

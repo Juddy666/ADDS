@@ -5,7 +5,7 @@
 class Robot : public Move{
     public:
         Robot();
-        bool compareMove(Move* opponentMove);
+        int compareMove(Move* opponentMove);
 };
 
 #endif //ROBOT_H

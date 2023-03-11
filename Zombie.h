@@ -8,7 +8,7 @@ using namespace std;
 class Zombie: public Move{
     public: 
         Zombie();
-        bool compareMove(Move* opponentMove);
+        int compareMove(Move* opponentMove);
 };
 
 
