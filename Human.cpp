@@ -15,7 +15,7 @@ Human::Human(string new_name){
 Move* Human::makeMove(){
     string playerMoveName;
     movehelper helper;
-        cout << "Enter move" << endl;
+        // cout << "Enter move" << endl;
         cin >> playerMoveName;
         Move* playerMove = helper.movedetect(playerMoveName);
         return playerMove;
