@@ -9,4 +9,4 @@ int Truckloads::numTrucks(int numCrates, int loadSize){
         int left = numCrates/2;
 
     return numTrucks(right,loadSize) + numTrucks(left,loadSize);
-}
+};
