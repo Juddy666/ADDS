@@ -1,15 +1,17 @@
+
 #include "BubbleSort.h"
 
 #include <vector>
 
 std::vector<int> BubbleSort::sort(std::vector<int> list){
-    for (int i = vector.size() -1; i>1;i--){
-        for(int j = 0;j<i;j++){
-            if(vector.at(j)>vector.at(j+1)){
-                int temp = vector.at(j);
-                vector.at(j) = vector.at(j+1);
-                vector.at(j+1) = temp;
+    for (int i = 0; i<= list.size()-1;i++){
+        for(int j = i+1;j<=list.size()-1;j++){
+            if(list.at(i)>list.at(j)){
+                int temp = list.at(i);
+                list.at(i) = list.at(j);
+                list.at(j) = temp;
             }
         }
     }
+    return list;
 }
