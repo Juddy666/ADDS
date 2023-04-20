@@ -1,22 +1,49 @@
 
 #include <vector>
 #include <iostream>
+#include <sstream>
 #include "QuickSort.h"
 #include "RecursiveBinarySearch.h"
 using namespace std;
 int main(void){
     QuickSort mySort;
     RecursiveBinarySearch myBinarySearch;
-    std::vector<int>  myVector{7,4,2,10,3,1};
+
+    std::string input;
+    std::getline(std::cin, input);
+  
+    std::vector<int> myVector;
+    std::istringstream iss(input);
+  
+    int num;
+    while (iss  >> num) {
+    myVector.push_back(num);
+    }
+
+
+
+
+
+
+    
     std::vector<int>  myAns = mySort.sort(myVector);
+    bool is1;
+    is1 = myBinarySearch.search(myAns,1);
+    
+    if(is1 == 1){
+        cout << "true" << " ";
+    }    
+
+    else{
+        cout << "false" << " ";
+    }
 
     for(int i=0; i < myAns.size();i++){
         std::cout << myAns[i] << " ";
     }
     std::cout<<endl;
-    bool is1;
-    is1 = myBinarySearch.search(myAns,1);
-    cout << is1 << endl;
+    
+    
     
     return 0;
 };

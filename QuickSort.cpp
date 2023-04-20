@@ -61,3 +61,9 @@ std::vector<int>  QuickSort::sort(std::vector<int> list){
 
 
 }
+
+
+
+
+
+
