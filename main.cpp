@@ -1,9 +1,9 @@
 #include <iostream>
-#include "AutoComplete.h"
+#include "Autocomplete.h"
 #include "TrieNode.h"
 using namespace std;
 int main(void){
-    AutoComplete myAC;
+    Autocomplete myAC;
     myAC.insert("car");
     myAC.insert("cat");
     myAC.insert("caring");
