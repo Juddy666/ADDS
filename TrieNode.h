@@ -5,6 +5,7 @@
 
 class TrieNode{
     public:
+        int routerNumber;
         TrieNode(int size);  
         bool isEndOfWord;
         std::vector<TrieNode*> children;
