@@ -56,17 +56,23 @@ template <typename T>
   // Add the value to the end of the heap vector
   values.push_back(value);
 
-  int index = values.size() - 1;
+  int index = values.size();
   int parent_index = floor((index - 1) / 2);
-  bool heaping = values[index]< values[parent_index];
-  while (heaping==true) { //heapify
-      // Swap the value with its parent if it is smaller
-      std::swap(values[index], values[parent_index]);
-      index = parent_index;
-      int parent_index = floor((index - 1) / 2);
-      bool heaping = values[index]< values[parent_index]; 
+  for (parent_index; parent_index >= 0;
+       parent_index--) {
+    heapify(parent_index);
+  }
+  
+  
+  // bool heaping = values[index]< values[parent_index];
+  // while (heaping==true) { //heapify
+  //     // Swap the value with its parent if it is smaller
+  //     std::swap(values[index], values[parent_index]);
+  //     index = parent_index;
+  //     int parent_index = floor((index - 1) / 2);
+  //     bool heaping = values[index]< values[parent_index]; 
       
-    }   // The value is in its correct position
+  //   }   // The value is in its correct position
    }
 
 /*******************************/
