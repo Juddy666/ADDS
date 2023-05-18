@@ -57,17 +57,14 @@ template <typename T>
   values.push_back(value);
 
   int index = values.size() - 1;
-
-  while (index > 0) { //heapify
-    int parent_index = floor((index - 1) / 2);
-
-    if (values[index] < values[parent_index]) {         // Swap the value with its parent if it is smaller
+  int parent_index = floor((index - 1) / 2);
+  bool heaping = values[index]< values[parent_index] 
+  while (heaping) { //heapify
+      // Swap the value with its parent if it is smaller
       std::swap(values[index], values[parent_index]);
       index = parent_index;
     }   // The value is in its correct position
-    }
-  }
-  
+   }
 
 /*******************************/
 /* delete values from the heap */
