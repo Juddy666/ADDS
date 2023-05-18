@@ -1,5 +1,4 @@
 #include <queue>
-#include <iostream>
 #include <vector>
 
 int kth_largest(std::vector<int> values, int k){
@@ -9,5 +8,9 @@ int kth_largest(std::vector<int> values, int k){
     for(int i =0;i<length;i++){
         myqueue.push(values[i]); 
     }
-    return values[k-1];
+
+    for(int j =0;j<=k-1;j++){
+        myqueue.pop();
+    }
+    return myqueue.top();
 };
