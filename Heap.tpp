@@ -58,8 +58,8 @@ template <typename T>
 
   int index = values.size() - 1;
   int parent_index = floor((index - 1) / 2);
-  bool heaping = values[index]< values[parent_index] 
-  while (heaping) { //heapify
+  bool heaping = values[index]< values[parent_index]; 
+  while (heaping==true) { //heapify
       // Swap the value with its parent if it is smaller
       std::swap(values[index], values[parent_index]);
       index = parent_index;
