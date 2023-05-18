@@ -3,7 +3,9 @@
 
 int kth_largest(std::vector<int> values, int k){
     int length = sizeof(values);
-
+    if(k>length){
+        k = length;
+    }
     std::priority_queue<int> myqueue;
     for(int i =0;i<length;i++){
         myqueue.push(values[i]); 
