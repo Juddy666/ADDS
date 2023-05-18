@@ -52,7 +52,6 @@ Heap<T>::Heap(std::vector<T> start_values) {
 
 
 template <typename T>
-void Heap<T>::insert(T value) {
    void Heap<T>::insert(T value) {
   // Add the value to the end of the heap vector
   values.push_back(value);
@@ -68,7 +67,7 @@ void Heap<T>::insert(T value) {
     }   // The value is in its correct position
     }
   }
-  }
+  
 
 /*******************************/
 /* delete values from the heap */
