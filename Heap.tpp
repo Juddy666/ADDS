@@ -50,9 +50,6 @@ Heap<T>::Heap(std::vector<T> start_values) {
   }
 }
 
-/*******************************/
-// add values to the heap
-/*******************************/
 
 template <typename T>
 void Heap<T>::insert(T value) {
@@ -62,29 +59,24 @@ void Heap<T>::insert(T value) {
 
   int index = values.size() - 1;
 
-  // Perform the "up-heap" operation to maintain the heap property
-  while (index > 0) {
+  while (index > 0) { //heapify
     int parent_index = floor((index - 1) / 2);
 
-    if (values[index] < values[parent_index]) {
-      // Swap the value with its parent if it is smaller
+    if (values[index] < values[parent_index]) {         // Swap the value with its parent if it is smaller
       std::swap(values[index], values[parent_index]);
       index = parent_index;
-    } else {
-      break;  // The value is in its correct position
+    }   // The value is in its correct position
     }
   }
-   }
-}
+  }
 
 /*******************************/
 /* delete values from the heap */
 /*******************************/
 
 template <typename T>
-void Heap<T>::remove(T value) {
-  // Find the index of the value to be removed
-  int index = -1;
+void Heap<T>::remove(T value) {                                       
+  int index = -1; // Find the index of the value to be removed
   for (int i = 0; i < values.size(); i++) {
     if (values[i] == value) {
       index = i;
@@ -95,13 +87,9 @@ void Heap<T>::remove(T value) {
   if (index == -1) {
     return;  // Value not found in the heap
   }
-
-  // Swap the value with the last element in the heap
-  std::swap(values[index], values[values.size() - 1]);
-  values.pop_back();  // Remove the value from the heap
-
-  // Perform the "down-heap" operation to maintain the heap property
-  heapify(index);
+  std::swap(values[index], values[values.size() - 1]); // Swap the value with the last element in the heap
+  values.pop_back();  // Remove 
+  heapify(index); //heapify
 }
 
 /*******************************/
@@ -110,11 +98,6 @@ void Heap<T>::remove(T value) {
 
 template <typename T>
 T Heap<T>::getMin() {
-  /if (values.empty()) {
-      return T();
-  }
-
-  // The minimum value is always at the root of the heap
   return values[0];
   }
 
